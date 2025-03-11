@@ -29,30 +29,30 @@ const Navbar = () => {
         <div className="flex justify-between gap-4 ">
           {/* contents */}
           <div className="flex gap-4 items-center justify-center">
-            <div className="flex flex-col items-center justify-center">
-              <FiMoon className="text-orange-400 text-2xl" />
+            <div className="flex flex-col items-center justify-center cursor-pointer">
+              <FiMoon className="text-orange-400 text-2xl hover:text-orange-400" />
               <p className="text-xs">Ramadan Fest</p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <CgProfile className="text-2xl" />
+            <div className="flex flex-col items-center justify-center cursor-pointer">
+              <CgProfile className="text-2xl hover:text-orange-400" />
               <p className="text-xs">Account</p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <FaRegHeart className="text-2xl" />
+            <div className="flex flex-col items-center justify-center cursor-pointer">
+              <FaRegHeart className="text-2xl hover:text-orange-400" />
               <p className="text-xs">Wishlist</p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <IoIosGitCompare className="text-2xl" />
+            <div className="flex flex-col items-center justify-center cursor-pointer">
+              <IoIosGitCompare className="text-2xl hover:text-orange-400" />
               <p className="text-xs">Compare</p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <FaPlusSquare className="text-2xl"/>
+            <div className="flex flex-col items-center justify-center cursor-pointer">
+              <FaPlusSquare className="text-2xl hover:text-orange-400"/>
               <p className="text-xs">PC Builder</p>
             </div>
           </div>
           {/* cart logo */}
-          <div>
-            <TiShoppingCart className="text-4xl bg-blue-500 px-1 rounded-sm" />
+          <div className="cursor-pointer">
+            <TiShoppingCart className="text-4xl bg-blue-500 hover:opacity-50 px-1 rounded-sm" />
           </div>
         </div>
       </div>
