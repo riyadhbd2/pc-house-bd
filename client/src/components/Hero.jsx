@@ -21,7 +21,7 @@ const Hero = () => {
       {/* Photo Slider */}
       <div className="flex items-center justify-center flex-col lg:flex-row gap-y-6 lg:gap-x-10">
         {/* Main Slider Section */}
-        <div className="relative w-full lg:w-3/4 border">
+        <div className="relative w-full lg:w-3/4">
           <img
             src={images[current]}
             alt="Slide"
@@ -57,7 +57,7 @@ const Hero = () => {
         </div>
 
         {/* Hero Images Section */}
-        <div className="w-full lg:w-1/4 flex flex-row lg:flex-col gap-6">
+        <div className="w-full lg:w-1/4 flex flex-row lg:flex-col gap-x-4 lg:gap-y-8">
           <img
             className="w-full lg:w-full h-32 md:h-40 lg:h-auto rounded-lg cursor-pointer object-cover flex-1"
             src={assets.hero1}
