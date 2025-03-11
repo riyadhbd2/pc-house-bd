@@ -5,7 +5,7 @@ import { FiMoon } from "react-icons/fi";
 import { IoIosGitCompare, IoIosSearch } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TiShoppingCart } from "react-icons/ti";
-import { assets } from "../assets/assets";
+import { assets } from "../assets/assets.js";
 
 const Navbar = () => {
   return (
@@ -24,7 +24,7 @@ const Navbar = () => {
 
           {/* search bar for large screen */}
           <div className="hidden lg:flex relative cursor-pointer w-2/5">
-            <IoIosSearch className="absolute top-1 right-3 text-black text-2xl" />
+            <IoIosSearch className="absolute top-1 right-3 text-black text-2xl hover:text-orange-400" />
             <input
               className="h-8 w-full rounded-full text-black p-2 outline-none"
               type="search"
@@ -69,18 +69,22 @@ const Navbar = () => {
         </div>
         {/* search bar for small screen */}
         <div className="lg:hidden relative cursor-pointer w-full">
-          <IoIosSearch className="absolute top-1 right-3 text-black text-2xl" />
+          <IoIosSearch className="absolute top-1 right-3 text-black text-2xl hover:text-orange-400" />
           <input
-            className="h-8 w-full rounded-full text-black p-2 outline-none"
+            className="h-8 w-full rounded-full text-black p-3 outline-none"
             type="search"
             name=""
             id=""
+            style={{
+              WebkitAppearance: "none", // Ensures compatibility
+              MozAppearance: "textfield" // Firefox compatibility
+            }}
           />
         </div>
       </div>
       {/* second part */}
       <div className="">
-        <ul className="hidden lg:flex justify-between items-center bg-gray-100 px-40 py-2">
+        <ul className="hidden lg:flex justify-between items-center bg-gray-100 px-40 py-2 gap-2">
           <li className="cursor-pointer">Desktop</li>
           <li className="cursor-pointer">Laptops</li>
           <li className="cursor-pointer">Monitor</li>
