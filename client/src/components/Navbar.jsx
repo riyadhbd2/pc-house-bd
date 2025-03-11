@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center w-full">
           {/* home logo for large screen */}
           <div className="hidden lg:flex cursor-pointer">
-            <img width="300px" src={assets.home} alt="" />
+            <img width="300px" src={assets.home} alt=""/>
           </div>
           {/* hamburger menu for small screen */}
           <div className="lg:hidden cursor-pointer">
@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
           {/* home logo for small screen */}
           <div className="lg:hidden cursor-pointer">
-            <img width="300px" src={assets.home} alt="" />
+            <img width="250px" src={assets.home} alt="" />
           </div>
           {/* contents section */}
           <div className="flex justify-between gap-4">
