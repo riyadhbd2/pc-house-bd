@@ -4,8 +4,8 @@ import { FaMobileScreenButton } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-black text-white text-center mt-10">
-      <div className="px-40 mt-10">
-        {/* social media icons */}
+      <div className="px-4 md:px-10 lg:px-40 mt-10">
+        {/* Social Media Icons */}
         <div className="flex justify-center gap-6 mb-6">
           <a
             href="https://www.facebook.com"
@@ -41,93 +41,61 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* contact numbers */}
-        <div className="flex gap-3">
-          <div className="flex items-center border border-gray-600 w-1/4 rounded-lg cursor-pointer hover:border-white">
-            <div>
-              <FaMobileScreenButton className="text-blue-700 ml-3" />
-            </div>
-            <hr className="w-px h-10 mx-3 my-1 rotate-180 bg-gray-600 border-none" />
-            <div className="text-start">
-              <p className="text-orange-600 text-sm">PC COMPONENT</p>
-              <p className="text-sm">019000000000, 01900000000</p>
-            </div>
-          </div>
-          <div className="flex items-center border border-gray-600 w-1/4 rounded-lg cursor-pointer hover:border-white">
-            <div>
-              <FaMobileScreenButton className="text-blue-700 ml-3" />
-            </div>
-            <hr className="w-px h-10 mx-3 my-1 rotate-180 bg-gray-600 border-none" />
-            <div className="text-start">
-              <p className="text-orange-600 text-sm">GADGET</p>
-              <p className="text-sm">019000000000, 01900000000</p>
-            </div>
-          </div>
-          <div className="flex items-center border border-gray-600 w-1/4 rounded-lg cursor-pointer hover:border-white">
-            <div>
-              <FaMobileScreenButton className="text-blue-700 ml-3" />
-            </div>
-            <hr className="w-px h-10 mx-3 my-1 rotate-180 bg-gray-600 border-none" />
-            <div className="text-start">
-              <p className="text-orange-600 text-sm">DESKTOP SERVICE</p>
-              <p className="text-sm">019000000000, 01900000000</p>
-            </div>
-          </div>
-          <div className="flex items-center border border-gray-600 w-1/4 rounded-lg cursor-pointer hover:border-white">
-            <div>
-              <FaMobileScreenButton className="text-blue-700 ml-3" />
-            </div>
-            <hr className="w-px h-10 mx-3 my-1 rotate-180 bg-gray-600 border-none" />
+        {/* Contact Numbers */}
+        <div className="flex flex-wrap justify-center gap-3">
+          {["PC COMPONENT", "GADGET", "DESKTOP SERVICE", "LAPTOP"].map(
+            (category, index) => (
+              <div
+                key={index}
+                className="flex items-center border border-gray-600 w-full sm:w-1/2 lg:w-1/5 p-3 rounded-lg cursor-pointer hover:border-white"
+              >
+                <FaMobileScreenButton className="text-blue-700" />
+                <div className="h-10 w-px bg-gray-600 mx-3"></div>
+                <div className="text-start">
+                  <p className="text-orange-600 text-sm">{category}</p>
+                  <p className="text-sm">019000000000, 01900000000</p>
+                </div>
+              </div>
+            )
+          )}
+        </div>
 
-            <div className="text-start">
-              <p className="text-orange-600 text-sm">LAPTOP</p>
-              <p className="text-sm">019000000000, 01900000000</p>
+        {/* Branch Addresses */}
+        <div className="flex flex-wrap justify-center gap-4 mt-10">
+          {[...Array(4)].map((_, index) => (
+            <div
+              key={index}
+              className="border border-gray-600 w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4 text-gray-400 rounded-lg"
+            >
+              <h2 className="text-white">Branch-{index + 1}</h2>
+              <p>Shop 248, 249, 250, Level-2, Computer City Center</p>
+              <p>(Multiplkan) New Elephant Road, Dhaka-1205, Bangladesh</p>
             </div>
-          </div>
+          ))}
         </div>
-        {/* brances address card */}
-        <div className="flex gap-4 mt-10 items-center justify-center">
-          <div className="border border-gray-600 w-1/5 text-gray-400 rounded-lg">
-            <h2 className="text-white">Brance-1</h2>
-            <p>Shop 248, 249, 250, Level-2, Computer</p>
-            <p>City Cneter, (Multiplkan) New Elephant</p>
-            <p>Road, Dhaka-1205, Bangladesh</p>
-          </div>
-          <div className="border border-gray-600 w-1/5 text-gray-400 rounded-lg">
-            <h2 className="text-white">Brance-1</h2>
-            <p>Shop 248, 249, 250, Level-2, Computer</p>
-            <p>City Cneter, (Multiplkan) New Elephant</p>
-            <p>Road, Dhaka-1205, Bangladesh</p>
-          </div>
-          <div className="border border-gray-600 w-1/5 text-gray-400 rounded-lg">
-            <h2 className="text-white">Brance-1</h2>
-            <p>Shop 248, 249, 250, Level-2, Computer</p>
-            <p>City Cneter, (Multiplkan) New Elephant</p>
-            <p>Road, Dhaka-1205, Bangladesh</p>
-          </div>
-          <div className="border border-gray-600 w-1/5 text-gray-400 rounded-lg">
-            <h2 className="text-white">Brance-1</h2>
-            <p>Shop 248, 249, 250, Level-2, Computer</p>
-            <p>City Cneter, (Multiplkan) New Elephant</p>
-            <p>Road, Dhaka-1205, Bangladesh</p>
-          </div>
-        </div>
-        {/* About us */}
+
+        {/* About Us Section */}
         <div className="mt-10">
           <h2 className="text-xl">About Us</h2>
-          <ul className="flex items-center justify-center gap-4">
-            <li className="cursor-pointer">About Us</li>
-            <li className="cursor-pointer">Contact Us</li>
-            <li className="cursor-pointer">Delivery</li>
-            <li className="cursor-pointer">Privacy Policy</li>
-            <li className="cursor-pointer">Terms & Conditions </li>
-            <li className="cursor-pointer">EMI Information</li>
-            <li className="cursor-pointer">Brands</li>
-            <li className="cursor-pointer">Blog</li>
+          <ul className="flex flex-wrap justify-center gap-4">
+            {[
+              "About Us",
+              "Contact Us",
+              "Delivery",
+              "Privacy Policy",
+              "Terms & Conditions",
+              "EMI Information",
+              "Brands",
+              "Blog",
+            ].map((item, index) => (
+              <li key={index} className="cursor-pointer">
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
-        {/* all right reserved */}
 
+        {/* Copyright */}
         <p className="text-xs text-gray-400 mt-10 mb-2">
           &copy; 2025 Your Company. All rights reserved.
         </p>
