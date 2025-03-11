@@ -57,7 +57,25 @@ const Navbar = () => {
         </div>
       </div>
       {/* second part */}
-      <div></div>
+      <div>
+        <ul className="flex justify-between items-center bg-gray-100 px-40 py-2">
+          <li className="cursor-pointer">Desktop</li>
+          <li className="cursor-pointer">Laptops</li>
+          <li className="cursor-pointer">Monitor</li>
+          <li className="cursor-pointer">Components</li>
+          <li className="cursor-pointer">Tablets</li>
+          <li className="cursor-pointer">Accessories</li>
+          <li className="cursor-pointer">Gaming</li>
+          <li className="cursor-pointer">Camera</li>
+          <li className="cursor-pointer">Smartwatch</li>
+          <li className="cursor-pointer">Gimbal</li>
+          <li className="cursor-pointer">Projector</li>
+          <li className="cursor-pointre">Audio</li>
+          <li className="cursor-pointer">Office Equipment</li>
+          <li className="cursor-pointer">Router</li>
+          <li className="cursor-pointer">TV</li>
+        </ul>
+      </div>
     </div>
   );
 };
