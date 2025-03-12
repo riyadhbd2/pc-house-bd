@@ -12,7 +12,7 @@ const Hero = () => {
 
   // Auto-slide effect
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    const slideInterval = setInterval(nextSlide, 7000); // Change slide every 5 seconds
 
     return () => clearInterval(slideInterval); // Cleanup interval on unmount
   }, [current]); // Re-run effect when "current" changes
@@ -31,13 +31,13 @@ const Hero = () => {
           {/* Left & Right Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600 transition"
+            className="absolute left-2 top-1/2 -translate-y-1/2 text-white rounded-full transition"
           >
             ◀
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600 transition"
+            className="absolute right-2 top-1/2 -translate-y-1/2  text-white rounded-full transition"
           >
             ▶
           </button>

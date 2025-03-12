@@ -4,7 +4,7 @@ import { FaMobileScreenButton } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-black text-white text-center mt-10">
-      <div className="px-4 md:px-10 lg:px-40 mt-10">
+      <div className="px-4 md:px-10 lg:px-40 mt-5">
         {/* Social Media Icons */}
         <div className="flex justify-center gap-6 mb-6">
           <a
@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Numbers */}
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-5">
           {["PC COMPONENT", "GADGET", "DESKTOP SERVICE", "LAPTOP"].map(
             (category, index) => (
               <div
