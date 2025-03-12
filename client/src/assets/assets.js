@@ -27,6 +27,12 @@ import card2 from '../assets/card-image-2.jpeg';
 import card3 from '../assets/card-image-3.jpeg';
 import card4 from '../assets/card-image-4.jpeg';
 import card5 from '../assets/card-image-5.jpeg';
+import pc_card1 from '../assets/card-1.jpg';
+import pc_card2 from '../assets/card-2.jpg';
+import pc_card3 from '../assets/card-3.jpg';
+import pc_card4 from '../assets/card-4.jpg';
+import pc_card5 from '../assets/card-5.jpg';
+import pc_card6 from '../assets/card-6.jpg';
 
 
 export const assets = {
@@ -34,7 +40,14 @@ export const assets = {
     hero1,
     hero2,
     component,
-    graphics
+    graphics,
+    pc_card1,
+    pc_card2,
+    pc_card3,
+    pc_card4,
+    pc_card5,
+    pc_card6
+
 };
 
 export const images = [one, two, three];
