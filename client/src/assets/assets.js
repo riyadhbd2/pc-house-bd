@@ -20,15 +20,31 @@ import f13 from '../assets/f-13.png';
 import f14 from '../assets/f-14.png';
 import f15 from '../assets/f-15.png';
 import f16 from '../assets/f-16.png';
-
+import component from '../assets/component_baner.jpg';
+import graphics from '../assets/graphics_baner.jpg';
+import card1 from '../assets/card-image-1.jpeg';
+import card2 from '../assets/card-image-2.jpeg';
+import card3 from '../assets/card-image-3.jpeg';
+import card4 from '../assets/card-image-4.jpeg';
+import card5 from '../assets/card-image-5.jpeg';
 
 
 export const assets = {
     home,
     hero1,
     hero2,
+    component,
+    graphics
 };
 
 export const images = [one, two, three];
 
 export const features = [ f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15, f16 ];
+
+export const cards = [
+    { id: 1, price: 100, title: "Card 1", image: card1 },
+    { id: 2, price: 200, title: "Card 2", image: card2 },
+    { id: 3, price: 300, title: "Card 3", image: card3 },
+    { id: 4, price: 400, title: "Card 4", image: card4 },
+    { id: 5, price: 500, title: "Card 5", image: card5 },
+  ];
